@@ -1,0 +1,435 @@
+/* ==============================
+   WATER FOR LIFE - MAIN STYLES
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #123;
+    background: black;
+}
+
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0077b6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #123;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077b6;
+}
+
+
+/* ==============================
+   HERO SECTION
+   ============================== */
+
+.hero-section {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 7%;
+    background: linear-gradient(135deg, #dff6ff, #ffffff);
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    color: #0077b6;
+    margin: 15px 0;
+}
+
+.hero-content p {
+    font-size: 19px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.small-title {
+    color: #0096c7;
+    font-size: 13px !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Hero Image */
+
+.hero-section > img {
+    width: 48%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 119, 182, 0.25);
+}
+
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+.button {
+    display: inline-block;
+    padding: 13px 26px;
+    background: #0077b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #005f8f;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   GENERAL SECTIONS
+   ============================== */
+
+.section {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 100px 7%;
+    background: white;
+}
+
+.section.reverse {
+    background: #eaf8ff;
+}
+
+.section-image {
+    flex: 1;
+}
+
+.section-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.section-content {
+    flex: 1;
+}
+
+.section-content h2,
+.pollution-content h2,
+.action-section h2,
+.videos-heading h2 {
+    font-size: 40px;
+    color: #0077b6;
+    margin: 10px 0 20px;
+}
+
+.section-content p {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+
+/* ==============================
+   POLLUTION SECTION
+   ============================== */
+
+.pollution-section {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 7%;
+    background: #fff7f5;
+}
+
+.pollution-content {
+    flex: 1;
+}
+
+.pollution-content p:not(.small-title) {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.pollution-section > img {
+    width: 48%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==============================
+   VIDEOS SECTION
+   ============================== */
+
+.videos-section {
+    padding: 100px 7%;
+    background: #f4fbff;
+}
+
+.videos-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.videos-heading p:not(.small-title) {
+    font-size: 17px;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.video-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 119, 182, 0.12);
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 119, 182, 0.18);
+}
+
+.video-card video {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    background: #000;
+}
+
+.video-card h3 {
+    color: #0077b6;
+    font-size: 22px;
+    padding: 22px 25px 8px;
+}
+
+.video-card p {
+    padding: 0 25px 25px;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   CONSERVATION / ACTION SECTION
+   ============================== */
+
+.action-section {
+    padding: 100px 7%;
+    text-align: center;
+    background: white;
+}
+
+.action-section h2 {
+    margin-bottom: 45px;
+}
+
+.action-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px 25px;
+    background: #f0faff;
+    border-radius: 18px;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 119, 182, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 119, 182, 0.15);
+}
+
+.card h3 {
+    color: #0077b6;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    text-align: center;
+    padding: 55px 20px;
+    background: #023e8a;
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+
+/* ==============================
+   MOBILE PHONE DESIGN
+   ============================== */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    /* Sections */
+
+    .hero-section,
+    .section,
+    .pollution-section {
+        flex-direction: column;
+        padding: 60px 6%;
+        gap: 35px;
+    }
+
+
+    /* Hero */
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .hero-section > img,
+    .pollution-section > img {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* General Sections */
+
+    .section-image,
+    .section-content {
+        width: 100%;
+    }
+
+    .section-image img {
+        height: 300px;
+    }
+
+
+    /* Headings */
+
+    .section-content h2,
+    .pollution-content h2,
+    .action-section h2,
+    .videos-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* Videos */
+
+    .videos-section {
+        padding: 70px 6%;
+    }
+
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+
+    .video-card video {
+        height: 250px;
+    }
+
+
+    /* Action Cards */
+
+    .action-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
