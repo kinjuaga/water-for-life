@@ -1,1 +1,5 @@
 
+User-agent: *
+Allow: /
+
+Sitemap: https://kinjuaga.github.io/water-for-life/sitemap.xml
