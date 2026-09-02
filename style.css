@@ -432,4 +432,23 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+
+   /* MOBILE NAVIGATION */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px 4%;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
 }
